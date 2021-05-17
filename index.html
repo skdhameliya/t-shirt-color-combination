@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tryColor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="bt-V5-css/bootstrap.min.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&family=Black+And+White+Picture&family=Black+Ops+One&family=Bungee+Inline&family=Bungee+Shade&family=Butcherman&family=Ceviche+One&family=Chelsea+Market&family=Creepster&family=Eater&family=Ewert&family=Faster+One&family=Freckle+Face&family=Frijole&family=Grenze+Gotisch:wght@900&family=Gugi&family=Major+Mono+Display&family=Monofett&family=Monoton&family=Nosifer&family=Piedra&family=Potta+One&family=Ribeye+Marrow&family=Rye&family=Slackey&family=Vast+Shadow&family=Wallpoet&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/file1_css.css">
+
+</head>
+<body>
+
+
+	<div class="visibility mt-5">
+		<div class="container" style="border: ;">
+			<div class="row align-items-center">
+			  	<div class="col-sm-4 text-center" style="background: ;">
+					<p id="tshirtColor"><b>T-shirt Color : </b> #8b0000</p>
+					<p id="fontColor"><b>Font Color :</b> #000000</p>
+					<p id="fontFamily"><b>Font Family :</b> Segoe Alt</p>
+					<p id="fontBackColor"><b>Font Back Color :</b> #20B2AA</p>
+			  	</div>
+				<div class="col-sm-4 text-center align-items-center" style="background:  ;">
+					<img class="" style="background-color: darkred;" id="tshirtImage" src="./img/demo2.png" width="100%" alt="">
+					<div class="row align-items-center">
+						<center><p id="text1" class="text-center">Type Something</p></center>
+					</div>
+				</div>
+			  	<div class="col-sm-4" style="background: ;">
+					<!-- <h1 class="text-center">try combo</h1> -->
+					<center>
+						<button type="button" class="btn btn-primary mt-2" onclick="changeRandom()">Try All Random Combinations</button>
+						<input class="mt-3" type="text" id="userText" oninput="changeText()" placeholder="Type Something">
+					</center>
+			  	</div>
+			</div>
+	  </div>
+	  <!-- // S-m--it D-h---a-meliya -->
+
+	<div class="container mt-5 p-2" style="border: 5px solid black;">
+		<div class="row align-items-center">
+			<div class="col-sm-3 p-2">
+				<center><button type="button" class="btn btn-primary" onclick="changeTshirt()">Change T-shirt Color</button></center>
+			</div>
+			<div class="col-sm-3 p-2">
+				<center>
+					<button type="button" class="btn btn-primary" onclick="changeFontColor()">Font Color</button>
+					<button type="button" class="btn btn-primary" onclick="changeFontFamily()">Font Family</button>
+					<br>Letter Space : <input type="range" oninput="changeLetterSpace(this.value)" value="1" max="13"><span id="scrolVal"></span> 
+					<br>Font Size : <input type="range" oninput="changeFontSize(this.value)" value="1" max="50"><span id="f_Size"></span>
+				</center>
+			</div>
+			<div class="col-sm-3">
+				<center>
+					<button type="button" class="btn btn-primary" onclick="changeFontBackColor()">Font Back Color</button>
+					<br>Font Back Width : <input type="range" oninput="changeFontBackWidth(this.value)" max="225" value="1"><span id="f_Width"></span> 
+					<br>Font Back Height : <input type="range" oninput="changeFontBackHeight(this.value)" value="1"><span id="f_Height"></span> 
+				</center>
+			</div>
+			<!-- s-k-d -->
+			<div class="col-sm-3">
+				<center>
+					<button type="button" class="btn btn-primary" onclick="moveUp()">up</button>
+					<button type="button" class="btn btn-primary" onclick="moveDown()">down</button>
+					<button type="button" class="btn btn-primary" onclick="moveLeft()">left</button>
+					<button type="button" class="btn btn-primary" onclick="moveRight()">right</button>
+				</center>
+				<!-- <br>up : <input type="range" oninput="changeToUp(this.value)" max="130" value="1"><span id="c_up"></span>  -->
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="bt-V5-js/bootstrap.bundle.min.js">
+	<link rel="stylesheet" type="text/css" href="bt-V5-js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="bt-V5-js/popper.min.js"> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+	<script src="js/file1_js.js"></script>
+	
+
+</body>
+</html>
