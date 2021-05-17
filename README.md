@@ -9,8 +9,8 @@ https://trycolor.firebaseapp.com/
 
 functionalities : 
 
-\n-->  change t-shirt color
-\n-->  change font style
+-->  change t-shirt color
+-->  change font style
 -->  change font color
 -->  change background color
 -->  change placement of design (up, down, left, right)
