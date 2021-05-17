@@ -16,7 +16,10 @@ functionalities :
 -->  change placement of design (up, down, left, right)
 
 
+home page
 ![4](https://user-images.githubusercontent.com/53290891/118452690-07061480-b714-11eb-8f31-628e57309883.JPG)
+
+customization
 ![3](https://user-images.githubusercontent.com/53290891/118452679-053c5100-b714-11eb-92b2-e640b7248012.JPG)
 
 
